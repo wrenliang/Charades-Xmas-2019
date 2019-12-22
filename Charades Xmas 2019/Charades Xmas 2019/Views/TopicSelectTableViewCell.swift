@@ -11,7 +11,7 @@ import UIKit
 class TopicSelectTableViewCell: UITableViewCell {
     lazy var topicImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "head-1")
+        imageView.image = UIImage(named: "first")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         return imageView
