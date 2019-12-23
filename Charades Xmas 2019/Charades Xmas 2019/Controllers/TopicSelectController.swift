@@ -68,6 +68,14 @@ extension TopicSelectController: UITableViewDelegate, UITableViewDataSource {
         return topicCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pushVC = DetailTopicViewController()
+        pushVC.parentCellColor = colours[indexPath.row%4]
+        pushVC.topicNum = indexPath.row
+        
+        navigationController?.pushViewController(pushVC, animated: true)
+    }
+    
     
 }
 

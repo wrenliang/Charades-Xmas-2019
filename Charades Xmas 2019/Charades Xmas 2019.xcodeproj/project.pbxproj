@@ -16,6 +16,10 @@
 		6C2F5D4423AEE208008FEF0A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2F5D4323AEE208008FEF0A /* NavigationController.swift */; };
 		6C2F5D4823AEE2B2008FEF0A /* TopicSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2F5D4723AEE2B2008FEF0A /* TopicSelectView.swift */; };
 		6C2F5D4A23AEE2C5008FEF0A /* TopicSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2F5D4923AEE2C5008FEF0A /* TopicSelectTableViewCell.swift */; };
+		6C6BA6A023B13A71008EB44B /* ModalWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA69F23B13A71008EB44B /* ModalWordViewController.swift */; };
+		6C6BA6A223B13E81008EB44B /* ModalWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA6A123B13E81008EB44B /* ModalWordView.swift */; };
+		6CE310E923B025950061FB54 /* DetailTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE310E823B025950061FB54 /* DetailTopicView.swift */; };
+		6CE310EB23B0263E0061FB54 /* DetailTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE310EA23B0263E0061FB54 /* DetailTopicViewController.swift */; };
 		6CFBE33623B01D1F0047BA74 /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBE33523B01D1F0047BA74 /* WordData.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		6C2F5D4323AEE208008FEF0A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6C2F5D4723AEE2B2008FEF0A /* TopicSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSelectView.swift; sourceTree = "<group>"; };
 		6C2F5D4923AEE2C5008FEF0A /* TopicSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSelectTableViewCell.swift; sourceTree = "<group>"; };
+		6C6BA69F23B13A71008EB44B /* ModalWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWordViewController.swift; sourceTree = "<group>"; };
+		6C6BA6A123B13E81008EB44B /* ModalWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWordView.swift; sourceTree = "<group>"; };
+		6CE310E823B025950061FB54 /* DetailTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopicView.swift; sourceTree = "<group>"; };
+		6CE310EA23B0263E0061FB54 /* DetailTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopicViewController.swift; sourceTree = "<group>"; };
 		6CFBE33523B01D1F0047BA74 /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +89,8 @@
 			children = (
 				6C2F5D4723AEE2B2008FEF0A /* TopicSelectView.swift */,
 				6C2F5D4923AEE2C5008FEF0A /* TopicSelectTableViewCell.swift */,
+				6CE310E823B025950061FB54 /* DetailTopicView.swift */,
+				6C6BA6A123B13E81008EB44B /* ModalWordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 				6C2F5D3123AEE054008FEF0A /* RootTabBarController.swift */,
 				6C2F5D3323AEE054008FEF0A /* TopicSelectController.swift */,
 				6C2F5D4323AEE208008FEF0A /* NavigationController.swift */,
+				6CE310EA23B0263E0061FB54 /* DetailTopicViewController.swift */,
+				6C6BA69F23B13A71008EB44B /* ModalWordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 				6C2F5D4823AEE2B2008FEF0A /* TopicSelectView.swift in Sources */,
 				6C2F5D4423AEE208008FEF0A /* NavigationController.swift in Sources */,
 				6C2F5D4A23AEE2C5008FEF0A /* TopicSelectTableViewCell.swift in Sources */,
+				6CE310EB23B0263E0061FB54 /* DetailTopicViewController.swift in Sources */,
 				6C2F5D2E23AEE054008FEF0A /* AppDelegate.swift in Sources */,
 				6C2F5D3023AEE054008FEF0A /* SceneDelegate.swift in Sources */,
+				6C6BA6A023B13A71008EB44B /* ModalWordViewController.swift in Sources */,
+				6CE310E923B025950061FB54 /* DetailTopicView.swift in Sources */,
+				6C6BA6A223B13E81008EB44B /* ModalWordView.swift in Sources */,
 				6CFBE33623B01D1F0047BA74 /* WordData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
