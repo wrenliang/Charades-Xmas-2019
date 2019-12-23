@@ -28,14 +28,6 @@ class ModalWordViewController: UIViewController {
         self.view = newView
     }
 
-    @objc func closeView() {
-        //remove word or don't from total list
-        dismiss(animated: true) {
-        print("closed")
-            
-        }
-    }
-    
     @objc func yesClicked() {
         dismiss(animated: true, completion: {
             print("dismissing from yes")

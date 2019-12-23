@@ -19,6 +19,8 @@ class RootTabBarController: UITabBarController {
         firstViewController.tabBarItem.tag = 0
         firstViewController.tabBarItem.image = UIImage(systemName: "tray.2")
         
+        //Change this if you need multiple tabs
+        tabBar.isHidden = true
         
         let tabBarList = [firstViewController]
         viewControllers = tabBarList

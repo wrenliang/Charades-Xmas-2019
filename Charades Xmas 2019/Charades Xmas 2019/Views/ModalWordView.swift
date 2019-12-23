@@ -14,11 +14,27 @@ class ModalWordView: UIView {
     lazy var englishPrompt: UILabel = {
         let label = UILabel()
         
+        label.font = UIFont(name: "Futura-Bold", size: 30)
+        label.textColor = .black
+        label.text = "English Word xsajldskajdsa"
+        
+        label.textAlignment = .center
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
         return label
     }()
     
     lazy var chinesePrompt: UILabel = {
         let label = UILabel()
+        
+        label.font = UIFont(name: "Futura-Bold", size: 30)
+        label.textColor = .black
+        label.text = "Chinese Word"
+        
+        label.textAlignment = .center
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
@@ -28,9 +44,9 @@ class ModalWordView: UIView {
         
         let greenColor = UIColor(red: 69/255, green: 196/255, blue: 62/255, alpha: 1.0)
         
-        button.setTitle("Yes", for: .normal)
+        button.setTitle("👍", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 30)
+        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 35)
         
         button.layer.cornerRadius = 50
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -44,9 +60,9 @@ class ModalWordView: UIView {
         
         let redColor = UIColor(red: 198/255, green: 65/255, blue: 55/255, alpha: 1.0)
         
-        button.setTitle("No", for: .normal)
+        button.setTitle("👎", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 30)
+        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 35)
         
         button.layer.cornerRadius = 50
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -93,5 +109,15 @@ class ModalWordView: UIView {
         noButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -150).isActive = true
         noButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
         noButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        englishPrompt.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        englishPrompt.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        englishPrompt.topAnchor.constraint(equalTo: topAnchor, constant: 150).isActive = true
+        englishPrompt.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        
+        chinesePrompt.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        chinesePrompt.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        chinesePrompt.topAnchor.constraint(equalTo: englishPrompt.bottomAnchor, constant: 150).isActive = true
+        chinesePrompt.heightAnchor.constraint(equalToConstant: 75).isActive = true
     }
 }
