@@ -215,7 +215,7 @@ struct Words {
         "Steve Jobs",
         "Confucius",
         "Tchaikovsky",
-        "Fei Cheng Wu Rao (TV Show)",
+        "Fei Cheng Wu Rao (TV)",
         "Romeo and Juliet",
         "Charles Darwin",
         "The Art of War by Sun Tzu",
@@ -235,7 +235,7 @@ struct Words {
     ]
     
     var cultureArrayChn = [
-        "芳华 （电影）",
+        "芳华 (电影)",
         "孙悟空",
         "丘比特",
         "奥特曼",
@@ -245,7 +245,7 @@ struct Words {
         "蝙蝠侠",
         "卓别林",
         "朗朗",
-        "复仇者 （电影）",
+        "复仇者 (电影)",
         "傲慢与偏见",
         "指环王",
         "泰坦尼克號",
@@ -266,13 +266,13 @@ struct Words {
         "哈利·波特",
         "日本动漫",
         "狮子王",
-        "冰雪奇缘 (电影）",
-        "花木兰 （电影）",
+        "冰雪奇缘 (电影)",
+        "花木兰 (电影)",
         "微信",
         "迪士尼乐园",
         "艾萨克·牛顿",
-        "中国好声音 （电视）",
-        "权力的游戏 （电视）"
+        "中国好声音 (电视)",
+        "权力的游戏 (电视)"
     ]
     
     var miscArrayEng = [
@@ -329,7 +329,7 @@ struct Words {
         "驯鹿",
         "人工智能",
         "课程表",
-        "特斯拉 （汽车）",
+        "特斯拉 (汽车)",
         "猴子",
         "大象",
         "袋鼠",

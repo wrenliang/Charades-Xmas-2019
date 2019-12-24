@@ -66,6 +66,20 @@ class DetailTopicView: UIView {
         return button
     }()
     
+    lazy var newWordLabel: UILabel = {
+        let label = UILabel()
+        
+        label.font = UIFont(name: "Futura-Bold", size: 25)
+        label.textColor = .black
+        label.text = "New word / 新谜语 :"
+        
+        label.textAlignment = .center
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
     override class var requiresConstraintBasedLayout: Bool {
       return true
     }
@@ -81,26 +95,31 @@ class DetailTopicView: UIView {
         addSubview(englishTitle)
         addSubview(chineseTitle)
         addSubview(showButton)
+        addSubview(newWordLabel)
         
         setupConstraints()
     }
     
     func setupConstraints() {
         showButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0).isActive = true
-        showButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
+        showButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -100).isActive = true
         showButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
         showButton.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
-        englishTitle.bottomAnchor.constraint(equalTo: showButton.topAnchor, constant: -UIScreen.main.bounds.height/10).isActive = true
+        englishTitle.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 25).isActive = true
         englishTitle.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         englishTitle.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-        englishTitle.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        englishTitle.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        chineseTitle.topAnchor.constraint(equalTo: showButton.bottomAnchor, constant: UIScreen.main.bounds.height/10).isActive = true
+        chineseTitle.topAnchor.constraint(equalTo: englishTitle.bottomAnchor, constant: 0).isActive = true
         chineseTitle.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         chineseTitle.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-        chineseTitle.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        chineseTitle.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
+        newWordLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        newWordLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        newWordLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        newWordLabel.bottomAnchor.constraint(equalTo: showButton.topAnchor, constant: -35).isActive = true
         
         //when view is set up, asynchronously on DispatchQueue.main.async
         DispatchQueue.main.async(execute: {
