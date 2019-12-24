@@ -9,6 +9,21 @@
 import UIKit
 
 class DetailTopicView: UIView {
+    var backgroundIndex = 0
+    var randomColors = [
+        UIColor(red: 255/255, green: 161/255, blue: 0/255, alpha: 1.0),
+        UIColor(red: 0/255, green: 173/255, blue: 17/255, alpha: 1.0),
+        UIColor(red: 66/255, green: 197/255, blue: 209/255, alpha: 1.0),
+        UIColor(red: 188/255, green: 60/255, blue: 62/255, alpha: 1.0),
+        UIColor(red: 255/255, green: 231/255, blue: 81/255, alpha: 1.0),
+        UIColor(red: 185/255, green: 64/255, blue: 201/255, alpha: 1.0),
+        UIColor(red: 205/255, green: 81/255, blue: 255/255, alpha: 1.0),
+        UIColor(red: 124/255, green: 69/255, blue: 39/255, alpha: 1.0),
+        UIColor(red: 255/255, green: 119/255, blue: 243/255, alpha: 1.0),
+        UIColor(red: 119/255, green: 255/255, blue: 151/255, alpha: 1.0)
+    ]
+    var colorCycles = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.magenta, UIColor.purple]
+    
     lazy var englishTitle: UILabel = {
         let label = UILabel()
         
@@ -40,11 +55,11 @@ class DetailTopicView: UIView {
     lazy var showButton: UIButton = {
         let button = UIButton()
         
-        button.setTitle("Random word!", for: .normal)
+        button.setTitle("🎲", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 30)
+        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 75)
         
-        button.layer.cornerRadius = 30
+        button.layer.cornerRadius = 75
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .white
         
@@ -73,18 +88,37 @@ class DetailTopicView: UIView {
     func setupConstraints() {
         showButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0).isActive = true
         showButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
-        showButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/1.5).isActive = true
-        showButton.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        showButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        showButton.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
-        englishTitle.bottomAnchor.constraint(equalTo: showButton.topAnchor, constant: -UIScreen.main.bounds.height/8).isActive = true
+        englishTitle.bottomAnchor.constraint(equalTo: showButton.topAnchor, constant: -UIScreen.main.bounds.height/10).isActive = true
         englishTitle.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         englishTitle.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
         englishTitle.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
-        chineseTitle.topAnchor.constraint(equalTo: showButton.bottomAnchor, constant: UIScreen.main.bounds.height/8).isActive = true
+        chineseTitle.topAnchor.constraint(equalTo: showButton.bottomAnchor, constant: UIScreen.main.bounds.height/10).isActive = true
         chineseTitle.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         chineseTitle.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
         chineseTitle.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
+        
+        //when view is set up, asynchronously on DispatchQueue.main.async
+        DispatchQueue.main.async(execute: {
+            self.recurseBackgroundColor()
+        })
+    }
+    
+    func recurseBackgroundColor() {
+        let oldVal = backgroundIndex
+        while (backgroundIndex == oldVal) {
+            backgroundIndex = Int.random(in: 0 ..< randomColors.count)
+        }
+        
+        UIView.animateKeyframes(withDuration: 1, delay: 0, options: .allowUserInteraction, animations: {
+            self.showButton.backgroundColor = self.randomColors[self.backgroundIndex]
+        }, completion: {
+            (Bool) -> Void in
+            self.recurseBackgroundColor()
+        })
     }
 }

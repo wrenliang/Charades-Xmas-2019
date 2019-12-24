@@ -20,7 +20,7 @@ class TopicSelectTableViewCell: UITableViewCell {
     lazy var englishLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = UIFont(name: "Futura-Bold", size: 20)
+        label.font = UIFont(name: "Futura-Bold", size: 30)
         label.text = "English Here"
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -28,7 +28,7 @@ class TopicSelectTableViewCell: UITableViewCell {
     }()
     lazy var chineseLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Futura-Bold", size: 20)
+        label.font = UIFont(name: "Futura-Bold", size: 30)
         label.textAlignment = .center
         label.text = "Chinese Here"
         label.textColor = .black
@@ -65,16 +65,16 @@ class TopicSelectTableViewCell: UITableViewCell {
     
     func setupConstraints() {
         topicImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        topicImage.leftAnchor.constraint(equalTo: leftAnchor, constant: 30).isActive = true
+        topicImage.leftAnchor.constraint(equalTo: leftAnchor, constant: 40).isActive = true
         topicImage.heightAnchor.constraint(equalToConstant: 90).isActive = true
         topicImage.widthAnchor.constraint(equalToConstant: 90).isActive = true
         
         
-        englishLabel.topAnchor.constraint(equalTo: topAnchor, constant: 40).isActive = true
+        englishLabel.topAnchor.constraint(equalTo: topAnchor, constant: 30).isActive = true
         englishLabel.leftAnchor.constraint(equalTo: topicImage.rightAnchor, constant: 0).isActive = true
         englishLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
         
-        chineseLabel.topAnchor.constraint(equalTo: englishLabel.bottomAnchor, constant: 10).isActive = true
+        chineseLabel.topAnchor.constraint(equalTo: englishLabel.bottomAnchor, constant: 5).isActive = true
         chineseLabel.leftAnchor.constraint(equalTo: topicImage.rightAnchor, constant: 0).isActive = true
         chineseLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
         

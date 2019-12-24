@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C2F5D2A23AEE054008FEF0A /* Charades Xmas 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charades Xmas 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2F5D2A23AEE054008FEF0A /* Charades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2F5D2D23AEE054008FEF0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C2F5D2F23AEE054008FEF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6C2F5D3123AEE054008FEF0A /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		6C2F5D2B23AEE054008FEF0A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C2F5D2A23AEE054008FEF0A /* Charades Xmas 2019.app */,
+				6C2F5D2A23AEE054008FEF0A /* Charades.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 			);
 			name = "Charades Xmas 2019";
 			productName = "Charades Xmas 2019";
-			productReference = 6C2F5D2A23AEE054008FEF0A /* Charades Xmas 2019.app */;
+			productReference = 6C2F5D2A23AEE054008FEF0A /* Charades.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -340,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Wren.Charades-Xmas-2019";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Charades;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -358,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Wren.Charades-Xmas-2019";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Charades;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

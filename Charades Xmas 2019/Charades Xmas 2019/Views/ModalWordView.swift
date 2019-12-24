@@ -11,12 +11,13 @@ import UIKit
 class ModalWordView: UIView {
     var colour: UIColor?
     
+    
     lazy var englishPrompt: UILabel = {
         let label = UILabel()
         
-        label.font = UIFont(name: "Futura-Bold", size: 30)
+        label.font = UIFont(name: "Futura-Bold", size: 50)
         label.textColor = .black
-        label.text = "English Word xsajldskajdsa"
+        label.text = "English Word"
         
         label.textAlignment = .center
         
@@ -28,7 +29,7 @@ class ModalWordView: UIView {
     lazy var chinesePrompt: UILabel = {
         let label = UILabel()
         
-        label.font = UIFont(name: "Futura-Bold", size: 30)
+        label.font = UIFont(name: "Futura-Bold", size: 50)
         label.textColor = .black
         label.text = "Chinese Word"
         
@@ -46,7 +47,7 @@ class ModalWordView: UIView {
         
         button.setTitle("👍", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 35)
+        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 50)
         
         button.layer.cornerRadius = 50
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -62,7 +63,7 @@ class ModalWordView: UIView {
         
         button.setTitle("👎", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 35)
+        button.titleLabel?.font = UIFont(name: "Futura-Bold", size: 50)
         
         button.layer.cornerRadius = 50
         button.translatesAutoresizingMaskIntoConstraints = false

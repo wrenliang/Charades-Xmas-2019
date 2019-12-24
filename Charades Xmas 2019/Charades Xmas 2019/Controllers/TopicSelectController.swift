@@ -60,6 +60,24 @@ extension TopicSelectController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         
+        switch (indexPath.row) {
+        case 0:
+            topicCell.topicImage.image = UIImage(named: "items-icon")
+            break
+        case 1:
+            topicCell.topicImage.image = UIImage(named: "action-icon")
+            break
+        case 2:
+            topicCell.topicImage.image = UIImage(named: "culture-icon")
+            break
+        case 3:
+            topicCell.topicImage.image = UIImage(named: "misc-icon")
+            break
+        default:
+            topicCell.topicImage.image = UIImage(named: "first")
+            break
+        }
+        
         topicCell.englishLabel.text = WordData.topicsEnglish[indexPath.row]
         topicCell.chineseLabel.text = WordData.topicsChinese[indexPath.row]
         
