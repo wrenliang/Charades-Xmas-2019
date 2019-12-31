@@ -21,7 +21,7 @@ This is a fun project I worked on over winter break for our annual Christmas par
 
 *Note*: This app is currently optimized for iPhone 11 / iPhone XR view size
 
-4) Click the Play button
+4) Click the Play button to run the Simulator
 
 ### Adding new words
 1) Open the "WordData.swift" file under the "Models" group
