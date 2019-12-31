@@ -15,6 +15,8 @@ struct Words {
     let topicsEnglish = ["Items", "Actions", "Culture", "Misc."]
     let topicsChinese = ["东西", "动作", "文化", "其他"]
     
+    
+    //MARK: - "Word Arrays": Each topic has two arrays, one for English and one for Chinese
     var itemsArrayEng = [
         "Perfume",
         "Toilet",
