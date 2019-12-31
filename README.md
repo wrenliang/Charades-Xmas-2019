@@ -1,4 +1,4 @@
-# Family Charades: Christmas 2019! ❄️🎄☃️
+# Family Charades: Christmas 2019! 🎁🎄🎁
 
 <img src="https://github.com/wrenliang/Charades-Xmas-2019/blob/master/readme%20Assets/Home-Screen.PNG" alt="Home Screen Picture" width="300"> <img src="https://github.com/wrenliang/Charades-Xmas-2019/blob/master/readme%20Assets/Demo-Gif.GIF" alt="Demo GIF" width="300">
 
