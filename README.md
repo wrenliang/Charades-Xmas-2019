@@ -20,6 +20,7 @@ This is a fun project I worked on over winter break for our annual Christmas par
 3) Select iPhone version in the upper left drop-down menu 
 
 *Note*: This app is currently optimized for iPhone 11 / iPhone XR view size
+
 4) Click the Play button
 
 ### Adding new words
