@@ -26,4 +26,4 @@ This is a fun project I worked on over winter break for our annual Christmas par
 ### Adding new words
 1) Open the "WordData.swift" file under the "Models" group
 2) Make any desired additions to the "Word Arrays"
-3) Important: Make sure any additions in one language array have a corresponding entry in the other array at the same index. The application logic treats the two arrays as an atomic structure.
+3) *Important*: Make sure any additions in one language array have a corresponding entry in the other array at the same index. The application logic treats the two arrays as an atomic structure.
