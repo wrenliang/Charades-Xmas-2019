@@ -22,7 +22,6 @@ class DetailTopicView: UIView {
         UIColor(red: 255/255, green: 119/255, blue: 243/255, alpha: 1.0),
         UIColor(red: 119/255, green: 255/255, blue: 151/255, alpha: 1.0)
     ]
-    var colorCycles = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.magenta, UIColor.purple]
     
     lazy var englishTitle: UILabel = {
         let label = UILabel()

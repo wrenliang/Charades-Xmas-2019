@@ -11,7 +11,6 @@ import UIKit
 class ModalWordView: UIView {
     var colour: UIColor?
     
-    
     lazy var englishPrompt: UILabel = {
         let label = UILabel()
         

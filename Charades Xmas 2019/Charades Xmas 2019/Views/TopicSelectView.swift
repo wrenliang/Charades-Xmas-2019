@@ -10,7 +10,6 @@ import UIKit
 
 
 class TopicSelectView: UIView {
-    
     lazy var tableView: UITableView = {
         var table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
@@ -21,22 +20,24 @@ class TopicSelectView: UIView {
     override class var requiresConstraintBasedLayout: Bool {
       return true
     }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         layoutView()
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     func layoutView() {
         backgroundColor = .white
         addSubview(tableView)
-        //addSubview(segmentControl)
 
         setupConstraints()
-
     }
+    
     private func setupConstraints() {
         tableView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true

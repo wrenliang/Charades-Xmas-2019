@@ -24,14 +24,7 @@ class RootTabBarController: UITabBarController {
         
         let tabBarList = [firstViewController]
         viewControllers = tabBarList
-        
-        layoutConstraints()
     }
-    
-    private func layoutConstraints() {
-        
-    }
-
 
 }
 
