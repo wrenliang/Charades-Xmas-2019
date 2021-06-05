@@ -42,11 +42,12 @@ class TopicSelectTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupView()
+        
     }
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20))
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -58,7 +59,6 @@ class TopicSelectTableViewCell: UITableViewCell {
         addSubview(englishLabel)
         addSubview(chineseLabel)
         
-        contentView.backgroundColor = .white
         setupConstraints()
         contentView.layer.cornerRadius = 30
         contentView.layer.masksToBounds = false
